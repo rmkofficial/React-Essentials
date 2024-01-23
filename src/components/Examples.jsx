@@ -9,11 +9,11 @@ export default function Examples() {
     setSelectedTopic(selectedButon);
   };
   return (
-    <Section title={Examples}>
+    <Section title={Examples} id="examples">
       <menu>
         <TabButton
           isSelected={selectedTopic === "Components"}
-          onSelect={() => {
+          onClick={() => {
             handleSelect("Components");
           }}
         >
@@ -21,7 +21,7 @@ export default function Examples() {
         </TabButton>
         <TabButton
           isSelected={selectedTopic === "JSX"}
-          onSelect={() => {
+          onClick={() => {
             handleSelect("JSX");
           }}
         >
@@ -29,7 +29,7 @@ export default function Examples() {
         </TabButton>
         <TabButton
           isSelected={selectedTopic === "Props"}
-          onSelect={() => {
+          onClick={() => {
             handleSelect("Props");
           }}
         >
@@ -37,7 +37,7 @@ export default function Examples() {
         </TabButton>
         <TabButton
           isSelected={selectedTopic === "State"}
-          onSelect={() => {
+          onClick={() => {
             handleSelect("State");
           }}
         >
