@@ -9,7 +9,7 @@ export default function Examples() {
     setSelectedTopic(selectedButon);
   };
   return (
-    <Section title={Examples} id="examples">
+    <Section title="Examples" id="examples">
       <menu>
         <TabButton
           isSelected={selectedTopic === "Components"}
